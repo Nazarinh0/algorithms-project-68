@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Nazar Annakhalov <nazar.annahalov@yandex.ru>"]
 readme = "README.md"
-packages = [{include = "algorithms_project_68"}]
+packages = [{include = "router"}]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
