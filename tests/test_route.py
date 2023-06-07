@@ -44,16 +44,16 @@ static_routing_test_cases = [
         },
     ),
     (
-        {'path': '/courses/python', 'method': 'GET'},
+        {'path': '/courses/sql', 'method': 'GET'},
         {
-            'path': '/courses/python',
+            'path': '/courses/sql',
             'method': 'GET',
             'params': {},
             'handler_output': 'PostgreSQL course'
         },
     ),
     (
-        {'path': '/courses/python/trees', 'method': 'GET'},
+        {'path': '/courses/sql/introduction', 'method': 'GET'},
         {
             'path': '/courses/sql/introduction',
             'method': 'GET',
@@ -62,6 +62,7 @@ static_routing_test_cases = [
         },
     ),
 ]
+
 
 @pytest.mark.parametrize('static_request, expected', static_routing_test_cases)
 def test_static_routing(static_request, expected):
