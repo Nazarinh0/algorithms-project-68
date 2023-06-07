@@ -29,7 +29,10 @@ class MakeRouter:
         params = {}
         given_path_segments = given_path.split('/')
         pattern_path_segments = pattern_path.split('/')
-        for given_path_segment, pattern_path_segment in zip(given_path_segments, pattern_path_segments):
+        for given_path_segment, pattern_path_segment in zip(
+                given_path_segments,
+                pattern_path_segments
+        ):
             if pattern_path_segment.startswith(":"):
                 params.setdefault(pattern_path_segment[1:], given_path_segment)
         return params
