@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "algorithms-project-68"
+name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["Nazar Annakhalov <nazar.annahalov@yandex.ru>"]
