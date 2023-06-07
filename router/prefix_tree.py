@@ -2,15 +2,14 @@ class PrefixTreeNode:
     def __init__(self, value):
         self.value = value
         self.children = {}
-        self.is_terminal = False
-        self.pattern_path = None
-        self.handler = None
+        self.methods = {}
+        self.pattern_path = ''
 
     def get_pattern_path(self):
         return self.pattern_path
 
-    def get_handler(self):
-        return self.handler
+    def get_handler(self, method):
+        return self.methods[method]
 
 
 class PrefixTree:
@@ -28,17 +27,18 @@ class PrefixTree:
             current_node = current_node.children[segment]
             pattern_path.append(segment)
 
-        current_node.is_terminal = True
         current_node.pattern_path = '/'.join(pattern_path)
-        current_node.handler = route['handler']
+        current_node.methods.setdefault(route['method'], route['handler'])
 
-    def find_route(self, route_path):
+    def find_route(self, request):
         current_node = self.root
-        segments = route_path.split('/')
+        segments = request['path'].split('/')
 
         for segment in segments:
             if segment not in current_node.children:
                 return None
             current_node = current_node.children[segment]
 
+        if request['method'] not in current_node.methods:
+            return None
         return current_node
