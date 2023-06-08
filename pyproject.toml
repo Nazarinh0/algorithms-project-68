@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "Router"
 version = "0.1.0"
 description = ""
 authors = ["Nazar Annakhalov <nazar.annahalov@yandex.ru>"]
