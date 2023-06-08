@@ -1,5 +1,6 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Nazarinh0/algorithms-project-68/workflows/hexlet-check/badge.svg)](https://github.com/Nazarinh0/algorithms-project-68/actions)
+
+[//]: # ([![Actions Status]&#40;https://github.com/Nazarinh0/algorithms-project-68/workflows/hexlet-check/badge.svg&#41;]&#40;https://github.com/Nazarinh0/algorithms-project-68/actions&#41;)
 [![Maintainability](https://api.codeclimate.com/v1/badges/79f78ee7dde4f00e8907/maintainability)](https://codeclimate.com/github/Nazarinh0/algorithms-project-68/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/79f78ee7dde4f00e8907/test_coverage)](https://codeclimate.com/github/Nazarinh0/algorithms-project-68/test_coverage)
 
