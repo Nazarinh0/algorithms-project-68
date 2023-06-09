@@ -3,8 +3,7 @@
 [![Actions Status](https://github.com/Nazarinh0/algorithms-project-68/workflows/hexlet-check/badge.svg)](https://github.com/Nazarinh0/algorithms-project-68/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/79f78ee7dde4f00e8907/maintainability)](https://codeclimate.com/github/Nazarinh0/algorithms-project-68/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/79f78ee7dde4f00e8907/test_coverage)](https://codeclimate.com/github/Nazarinh0/algorithms-project-68/test_coverage)
-[![Flake8 and Tests](https://github.com/Nazarinh0/algorithms-project-68/workflows/linter-check/badge.svg)](https://github.com/Nazarinh0/algorithms-project-68/actions/workflows/linter-check.yml)
-
+[![Flake8 and Testing](https://github.com/Nazarinh0/algorithms-project-68/actions/workflows/linter-check.yml/badge.svg)](https://github.com/Nazarinh0/algorithms-project-68/actions/workflows/linter-check.yml)
 # Description
 The router is one of the most commonly used components on any website through which it is accessed. The performance of the site depends on how fast the router works. For example, if a resource receives thousands of requests per second and there are many routes, then it may take significant time to load. Therefore, the design and speed of the router are important.
 
